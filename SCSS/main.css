@@ -561,6 +561,7 @@ body .maindiv footer .footthird p {
 @media (max-width: 400px) {
   body .maindiv {
     width: 100%;
+    left: 0px;
   }
   body .maindiv .prew {
     margin-top: 10%;
