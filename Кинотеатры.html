@@ -8,6 +8,8 @@
     <link rel="stylesheet"  href="SCSS/main.css">
     <link rel="icon" href="image/logotype.png" type="image">
     <title>Satellite</title>
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+    <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet">
 </head>
 
 <body>
@@ -138,7 +140,10 @@
 
 
     </div>
-    <script src="JS/main.js">
+    <input id="datepicker" type="text">
+    <script >
+        var datepicker = new ej.calendars.DatePicker({ width: "255px" });
+        datepicker.appendTo('#datepicker');
     </script>
 
 </body>
