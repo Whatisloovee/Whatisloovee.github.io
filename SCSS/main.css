@@ -27,8 +27,10 @@ body .hamburger-menu {
     opacity: 0;
   }
   body .hamburger-menu .menu__btn {
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center; /* центрируем содержимое кнопки */
+    display: flex;
+    /* используем flex для центрирования содержимого */
+    align-items: center;
+    /* центрируем содержимое кнопки */
     position: fixed;
     top: 20px;
     left: 20px;
@@ -637,17 +639,48 @@ body .maindiv .films .film {
   flex-direction: column;
   align-items: center;
 }
+body .maindiv .films .film .type {
+  font-size: 30px;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
 body .maindiv .films .film p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700px;
   color: #FFFFFF;
   text-align: center;
-  font-size: 32px;
-  line-height: 29px;
+  font-size: 25px;
+  line-height: 27px;
+  margin: 3% 5% 3% 5%;
 }
-body .maindiv .films .film img {
-  max-width: 100%;
+body .maindiv .films .film button {
+  margin: 10% 5% 5% 5%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  border-color: rgba(255, 255, 255, 0);
+}
+body .maindiv .films .film .img_film {
+  width: 220px;
+  height: 355px;
+  background-image: url("../image/film_rycsarteney.png");
+}
+body .maindiv .films .film .img_film .on_img {
+  opacity: 0;
+}
+body .maindiv .films .film .img_film:hover .on_img {
+  opacity: 1;
+  background-color: #737373;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 body .maindiv .img_kino1 {
   width: 100%;
@@ -805,5 +838,27 @@ body .maindiv .kino1_description .description img {
   }
   body .maindiv .footthird {
     text-align: center;
+  }
+}
+@media (min-width: 400px) and (max-width: 1200px) {
+  body .maindiv .prew {
+    margin-top: 10%;
+    width: 100%;
+  }
+  body .maindiv .prew .slog {
+    font-size: 45px;
+    width: 65%;
+    margin: 0%;
+    margin-bottom: 2%;
+  }
+  body .maindiv .prew .def {
+    font-size: 40px;
+    width: 45%;
+  }
+  body .maindiv .advantage .adventer {
+    padding-left: 2%;
+  }
+  body .maindiv .typesit .sit {
+    padding-left: 2%;
   }
 }/*# sourceMappingURL=main.css.map */
