@@ -112,6 +112,36 @@ body .hamburger-menu {
   body .hamburger-menu .menu__box .menu__item:hover {
     color: #f00;
   }
+  body .hamburger-menu .menu__box .nav__contacts {
+    list-style: none;
+    margin-top: 30px;
+    text-align: left;
+  }
+  body .hamburger-menu .menu__box .nav__contacts .nav__item {
+    margin-bottom: 10px;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+  }
+  body .hamburger-menu .menu__box .nav__contacts .nav__item img {
+    height: 20px;
+    margin-right: 7px;
+  }
+  body .hamburger-menu .menu__box .nav__contacts .nav__item .nav__contact:hover {
+    color: #f00;
+  }
+  body .hamburger-menu .menu__box .nav__contacts .nav__item .nav__contact {
+    height: -moz-max-content;
+    height: max-content;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700px;
+    color: #FFFFFF;
+    font-size: 17px;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
   body .hamburger-menu #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
   }
@@ -639,36 +669,19 @@ body .maindiv .films .film {
   flex-direction: column;
   align-items: center;
 }
-body .maindiv .films .film .type {
-  font-size: 30px;
-  margin-top: 15%;
-  margin-bottom: 10%;
-}
 body .maindiv .films .film p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700px;
   color: #FFFFFF;
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
   line-height: 27px;
-  margin: 3% 5% 3% 5%;
-}
-body .maindiv .films .film button {
-  margin: 10% 5% 5% 5%;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.7);
-  border-radius: 30px;
-  border-color: rgba(255, 255, 255, 0);
+  margin: 5% 5% 5% 5%;
 }
 body .maindiv .films .film .img_film {
-  width: 220px;
-  height: 355px;
+  width: 300px;
+  height: 450px;
   background-image: url("../image/film_rycsarteney.png");
 }
 body .maindiv .films .film .img_film .on_img {
@@ -681,6 +694,33 @@ body .maindiv .films .film .img_film:hover .on_img {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+body .maindiv .films .film .img_film:hover .on_img .type {
+  font-size: 37px;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+body .maindiv .films .film .img_film:hover .on_img p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 35px;
+  line-height: 27px;
+  margin: 5% 5% 3% 5%;
+}
+body .maindiv .films .film .img_film:hover .on_img button {
+  margin: 10% 5% 5% 5%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  border-color: rgba(255, 255, 255, 0);
 }
 body .maindiv .img_kino1 {
   width: 100%;

@@ -1,3 +1,4 @@
+//slider
 const slides = document.querySelector('.slides');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');

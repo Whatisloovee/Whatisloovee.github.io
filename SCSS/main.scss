@@ -147,6 +147,36 @@ body {
                 .menu__item:hover {
                     color: #f00;
                 }
+                
+                  .nav__contacts{
+                    list-style: none;
+                    margin-top: 30px;
+                    text-align: left;
+
+                    .nav__item
+                {
+                    margin-bottom: 10px;
+                    height: max-content;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        height: 20px;
+                        margin-right: 7px;
+                    }
+                        .nav__contact:hover{
+                            color: #f00;
+                        }
+                        .nav__contact{
+                            height: max-content;
+                            
+                            @include header();
+                            font-size: 17px;
+                            text-decoration: none;
+                            transition-duration: .25s;
+
+                        }
+                    }
+                }
 
 
 
@@ -719,38 +749,24 @@ body {
                 flex-direction: column;
                 align-items: center;
 
-                .type{
-                    font-size: 30px;
-                    margin-top: 15%;
-                    margin-bottom: 10%;
-                }
+               
                 p {
                     @include header();
                     text-align: center;
-                    font-size: 25px;
+                    font-size: 40px;
                     line-height: 27px;
-                    margin: 3% 5% 3% 5% ;
+                    margin: 5% 5% 5% 5% ;
         
 
                 }
-                button{
-                    margin: 10% 5% 5% 5%;
-                    font-family: 'Inter';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 25px;
-                    line-height: 30px;
-                    text-align: center;
-                    color: rgba(0, 0, 0, 0.7);
-                    border-radius: 30px;
-                    border-color:rgba(255, 255, 255, 0);
-                }
+              
 
                 .img_film {
-                    width: 220px;
-                    height: 355px;
+                    width: 300px;
+                    height: 450px;
+                 
                     background-image: url("../image/film_rycsarteney.png");
-
+                
                     .on_img {
                         opacity: 0;
                         
@@ -764,6 +780,33 @@ body {
                     height: 100%;
                     display: flex;
                     flex-direction: column;
+                    .type{
+                        font-size: 37px;
+                        margin-top: 15%;
+                        margin-bottom: 10%;
+                    }
+                    p {
+                        @include header();
+                        text-align: center;
+                        font-size: 35px;
+                        line-height: 27px;
+                        margin: 5% 5% 3% 5% ;
+            
+    
+                    }
+                    button{
+                        margin: 10% 5% 5% 5%;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 30px;
+                        line-height: 40px;
+                        text-align: center;
+                        color: rgba(0, 0, 0, 0.7);
+                        border-radius: 30px;
+                        border-color:rgba(255, 255, 255, 0);
+                    }
+    
                 }
 
             }

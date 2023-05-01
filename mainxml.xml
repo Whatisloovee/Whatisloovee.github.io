@@ -1,7 +1,7 @@
 <container_poster>
     <movie>
         <name>Марлоу</name>
-        <image>../image/film_rycsarteney.png</image>
+        <image>../films/300x450.webp</image>
         <type>Премьера</type>
         <time>100 мин.</time>
         <country_age>Ru / 18+</country_age>
@@ -17,5 +17,60 @@
         <genre>криминал</genre>
         <date>27.02.23-15.03.23</date>
     </movie>
+    <movie>
+        <name>Бешенство</name>
+        <image>../image/background_main_3.jpg</image>
+        <type>Премьера</type>
+        <time>110 мин.</time>
+        <country_age>Ru / 18+</country_age>
+        <genre>криминал</genre>
+        <date>27.02.23-15.03.23</date>
+    </movie>
+    <movie>
+        <name>Бешенство</name>
+        <image>../image/background_main_3.jpg</image>
+        <type>Премьера</type>
+        <time>110 мин.</time>
+        <country_age>Ru / 18+</country_age>
+        <genre>криминал</genre>
+        <date>27.02.23-15.03.23</date>
+    </movie>
+    <movie>
+        <name>Бешенство</name>
+        <image>../image/background_main_3.jpg</image>
+        <type>Премьера</type>
+        <time>110 мин.</time>
+        <country_age>Ru / 18+</country_age>
+        <genre>криминал</genre>
+        <date>27.02.23-15.03.23</date>
+    </movie>
+    <movie>
+        <name>Бешенство</name>
+        <image>../image/background_main_3.jpg</image>
+        <type>Премьера</type>
+        <time>110 мин.</time>
+        <country_age>Ru / 18+</country_age>
+        <genre>криминал</genre>
+        <date>27.02.23-15.03.23</date>
+    </movie>
+    <movie>
+        <name>Бешенство</name>
+        <image>../image/background_main_3.jpg</image>
+        <type>Премьера</type>
+        <time>110 мин.</time>
+        <country_age>Ru / 18+</country_age>
+        <genre>криминал</genre>
+        <date>27.02.23-15.03.23</date>
+    </movie>
+    <movie>
+        <name>Бешенство</name>
+        <image>../image/background_main_3.jpg</image>
+        <type>Премьера</type>
+        <time>110 мин.</time>
+        <country_age>Ru / 18+</country_age>
+        <genre>криминал</genre>
+        <date>27.02.23-15.03.23</date>
+    </movie>
+
     
 </container_poster>
