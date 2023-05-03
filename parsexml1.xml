@@ -1,0 +1,29 @@
+<container_poster>
+    <movie>
+        <name>Душа (2020)</name>
+        <image>../films/dysha.webp</image>
+        <type>Премьера</type>
+        <time>106 мин.</time>
+        <country_age>USA, Japan / 6+</country_age>
+        <genre>мультфильм, семейный</genre>
+        <date>10.05.23-10.06.23</date>
+    </movie>
+    <movie>
+        <name>Доктор Лиза (2020)</name>
+        <image>../films/doctor_lisa.webp</image>
+        <type>Премьера</type>
+        <time>120 мин.</time>
+        <country_age>Ru / 16+</country_age>
+        <genre>драма, биография</genre>
+        <date>10.05.23-10.06.23</date>
+    </movie>   
+    <movie>
+        <name>Зверопой 2 (2021)</name>
+        <image>../films/zveropoy2.webp</image>
+        <type>Премьера</type>
+        <time>110 мин.</time>
+        <country_age>USA, Japan / 6+</country_age>
+        <genre>мультфильм, семейный</genre>
+        <date>10.05.23-10.06.23</date>
+    </movie>
+</container_poster>

@@ -31,8 +31,8 @@ body {
         display: none;
     }
 
-    @media(max-width: 840px) {
-
+    @media(max-width: 880px) {
+      
         .nav {
             display: none;
         }
@@ -209,6 +209,8 @@ body {
             }
 
         }
+        
+
     }
 
 
@@ -463,7 +465,7 @@ body {
                 @include header();
                 padding-left: 1%;
                 padding-top: 2%;
-                margin-bottom: 1%;
+                margin-bottom: 3%;
                 font-size: 64px;
                 line-height: 77px;
                 text-align: center;
@@ -475,52 +477,80 @@ body {
             .films {
                 display: flex;
                 justify-content: space-around;
-                align-items: center;
+                flex-direction: row;
                 flex-wrap: wrap;
-                width: 100%;
-                height: max-content;
-                padding-bottom: 2%;
-
-                .film_sour {
-
-
-
-
-
-
-
-
-
-
-
+    
+                .film {
+                    background-color: rgba(22, 22, 22, 1);
+                    padding: 0% 0% 2% 0%;
+                    margin-bottom: 2%;
+    
+                    width: 340px;
                     display: flex;
+    
                     flex-direction: column;
-                    flex-wrap: wrap;
                     align-items: center;
-                    height: max-content;
-
-                    a {
+    
+                   
+                    p {
                         @include header();
-                        margin: 10%;
-                        width: 100%;
                         text-align: center;
-                        height: max-content;
-                        font-size: 36px;
-                        line-height: 44px;
-                        transition: all .3s ease;
-                        text-decoration: none;
-                        max-width: 100%;
+                        font-size: 40px;
+                        line-height: 40px;
+                        margin: 5% 5% 5% 5% ;
+            
+    
                     }
-
-                    a:hover {
-                        color: #f00;
+                  
+    
+                    .img_film {
+                        width: 300px;
+                        height: 450px;
+                     
+                        background-image: url("../image/film_rycsarteney.png");
+                    
+                        .on_img {
+                            opacity: 0;
+                            
+                        }
                     }
-
-                    img {
-                        height: 50%;
+    
+                    .img_film:hover .on_img {
+                        opacity: 1;
+                        background-color: #737373;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        .type{
+                            font-size: 37px;
+                            margin-top: 15%;
+                            margin-bottom: 10%;
+                        }
+                        p {
+                            @include header();
+                            text-align: center;
+                            font-size: 35px;
+                            line-height: 30px;
+                            margin: 5% 5% 3% 5% ;
+                
+        
+                        }
+                        button{
+                            margin: 10% 5% 5% 5%;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 30px;
+                            line-height: 40px;
+                            text-align: center;
+                            color: rgba(0, 0, 0, 0.7);
+                            border-radius: 30px;
+                            border-color:rgba(255, 255, 255, 0);
+                        }
+        
                     }
-
-
+    
                 }
             }
 
@@ -554,7 +584,7 @@ body {
                     align-items: baseline;
                     justify-content: space-around;
                     flex-direction: row;
-
+                    padding:0% 2% 0% 2%;
 
                     a {
                         @include header();
@@ -583,7 +613,6 @@ body {
 
                     a {
                         @include header();
-                        width: 10%;
                         text-align: center;
                         height: max-content;
                         font-size: 32px;
@@ -650,13 +679,70 @@ body {
         }
 
 
+.hidden{
+    display: none;
+}
+        #ticket-form {
+            
+            position: fixed;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 110;
+            background-color:#2E2E2E;
+            font-size: 20px;
+            color: #FFFFFF;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            .close-button{
+                border-radius: 20px;
+                position: absolute;
+                right: 2%;
+                top: 2%;
+                img{
+                    height: 14px;
+                }
+            }
+            .indent{
+                margin-bottom: 5%;
+            }
+            button{
+                font-size: 20px;
+            }
+            input{
+                font-size: 15px;
+            }
+            select{
+                font-size: 15px;
+            }
+            #time, #row, #seat{
 
-
+                margin-right: 3%;
+            }
+            #buy{
+                position: relative;
+                left: 40%;
+            }
+          }
+        
         //Афиша
-
+        .hidden2{
+            display: none;
+        }
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный чёрный цвет */
+            z-index: 9; /* выше всех элементов на странице, кроме модального окна */
+          }
+          
 
         .withtext {
-            margin-top: 10%;
+            margin-top: 15%;
 
             h1 {
                 @include header();
@@ -670,6 +756,7 @@ body {
 
                 background-color: rgba(217, 217, 217, 0.5);
                 display: flex;
+
 
                 button {
 
@@ -725,7 +812,45 @@ body {
 
 
                 }
+
+
+
+
             }
+            
+            @media (min-width:800px) and (max-width: 1320px){
+
+                .bgslider{
+                    width: 700px;
+                    .slider{
+                        width: 86%;
+
+                    }
+                }
+
+
+            }
+            @media (max-width:800px){
+
+                .bgslider{
+                    width: 330px;
+                    .slider{
+                        width: 87%;
+
+                    }
+                }
+
+
+            }
+
+
+
+
+
+
+
+
+
         }
 
         hr {
@@ -737,6 +862,11 @@ body {
             justify-content: space-around;
             flex-direction: row;
             flex-wrap: wrap;
+
+
+
+
+    
 
             .film {
                 background-color: rgba(22, 22, 22, 1);
@@ -754,7 +884,7 @@ body {
                     @include header();
                     text-align: center;
                     font-size: 40px;
-                    line-height: 27px;
+                    line-height: 40px;
                     margin: 5% 5% 5% 5% ;
         
 
@@ -789,8 +919,8 @@ body {
                         @include header();
                         text-align: center;
                         font-size: 35px;
-                        line-height: 27px;
-                        margin: 5% 5% 3% 5% ;
+                        line-height: 35px;
+                        margin: 3% 3% 2% 3% ;
             
     
                     }
@@ -902,7 +1032,9 @@ body {
 
     }
 
-    @media (max-width:400px) {
+    
+
+    @media (max-width:500px) {
         @mixin header_mob {
             font-size: 35px;
             line-height: normal;
@@ -922,7 +1054,7 @@ body {
             left: 0px;
 
             .prew {
-                margin-top: 10%;
+                margin-top: 0%;
                 background-size: 100%;
 
                 .slog {
@@ -1050,10 +1182,175 @@ body {
 
     }
 
+    @media (min-width:500px) and (max-width:600px){
+        .maindiv {
+            width: 100%;
+            left: 0px;
+
+            .prew {
+                margin-top: 0%;
+                background-size: 100%;
+
+                .slog {
+                    font-size: 27px;
+                    line-height: normal;
+                    height: max-content;
+                    width: 65%;
+                    margin: 0%;
+                    margin-bottom: 2%;
+                }
+
+                .def {
+                    font-size: 23px;
+                    line-height: normal;
+                    height: max-content;
+                    width: 45%;
+                }
+            }
+        }
+    }
 
 
 
-    @media (min-width:400px) and  (max-width:1200px) {
+    @media (min-width:600px) and (max-width:700px){
+        .maindiv {
+            width: 100%;
+            left: 0px;
+
+            .prew {
+                margin-top: 0%;
+                background-size: 100%;
+
+                .slog {
+                    font-size: 33px;
+                    line-height: normal;
+                    height: max-content;
+                    width: 65%;
+                    margin: 0%;
+                    margin-bottom: 2%;
+                }
+
+                .def {
+                    font-size: 28px;
+                    line-height: normal;
+                    height: max-content;
+                    width: 45%;
+                }
+            }
+        }
+    }
+
+
+
+
+    @media (min-width:700px) and (max-width:800px){
+        .maindiv {
+            width: 100%;
+            left: 0px;
+
+            .prew {
+                margin-top: 0%;
+                background-size: 100%;
+
+                .slog {
+                    font-size: 38px;
+                    line-height: normal;
+                    height: max-content;
+                    width: 65%;
+                    margin: 0%;
+                    margin-bottom: 2%;
+                }
+
+                .def {
+                    font-size: 33px;
+                    line-height: normal;
+                    height: max-content;
+                    width: 45%;
+                }
+            }
+        }
+    }
+
+    @media (min-width:800px) and (max-width:880px){
+        .maindiv {
+            width: 100%;
+            left: 0px;
+
+            .prew {
+                margin-top: 0%;
+                background-size: 100%;
+
+                .slog {
+                    font-size: 42px;
+                    line-height: normal;
+                    height: max-content;
+                    width: 65%;
+                    margin: 0%;
+                    margin-bottom: 2%;
+                }
+
+                .def {
+                    font-size: 38px;
+                    line-height: normal;
+                    height: max-content;
+                    width: 45%;
+                }
+            }
+        }
+    }
+    @media (min-width:880px) and (max-width:900px){
+        .maindiv {
+
+
+            .prew {
+                margin-top: 10%;
+                background-size: 100%;
+
+                .slog {
+                    font-size: 39px;
+                    line-height: normal;
+                    height: max-content;
+                    width: 65%;
+                    margin: 0%;
+                    margin-bottom: 2%;
+                }
+
+                .def {
+                    font-size: 34px;
+                    line-height: normal;
+                    height: max-content;
+                    width: 45%;
+                }
+            }
+        }
+    }
+
+    @media (min-width:900px) and (max-width:1150px){
+        .maindiv {
+            .prew {
+                margin-top: 10%;
+                background-size: 100%;
+
+                .slog {
+                    font-size: 46px;
+                    line-height: normal;
+                    height: max-content;
+                    width: 65%;
+                    margin: 0%;
+                    margin-bottom: 2%;
+                }
+
+                .def {
+                    font-size: 32px;
+                    line-height: normal;
+                    height: max-content;
+                    width: 45%;
+                }
+            }
+        }
+    }
+   
+    @media (min-width:1150px) and  (max-width:1200px) {
 
         .maindiv {
 

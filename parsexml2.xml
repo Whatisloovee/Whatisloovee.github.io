@@ -1,0 +1,137 @@
+<container_poster>
+    <movie>
+        <name>Зеленая миля (1999)</name>
+        <image>../films/zelonaya_mila.webp</image>
+        <type>Премьера</type>
+        <time>189 мин.</time>
+        <country_age>USA / 16+</country_age>
+        <genre>драма, фэнтези, криминал</genre>
+        <date>25.02.23-10.03.23</date>
+    </movie>
+    <movie>
+        <name>Список Шиндлера (1993)</name>
+        <image>../films/spisok_shindlera.webp</image>
+        <type>Премьера</type>
+        <time>195 мин.</time>
+        <country_age>USA / 16+</country_age>
+        <genre>драма, биография, история, военный</genre>
+        <date>25.02.23-10.03.23</date>
+    </movie>
+    <movie>
+        <name>Побег из Шоушенка (1994)</name>
+        <image>../films/pobeg_is_shoushenka.webp</image>
+        <type>Прокат</type>
+        <time>142 мин.</time>
+        <country_age>USA / 16+</country_age>
+        <genre>драма</genre>
+        <date>25.02.23-10.03.23</date>
+    </movie>
+    <movie>
+        <name>Форрест Гамп (1994)</name>
+        <image>../films/forest_gamp.webp</image>
+        <type>Прокат</type>
+        <time>142 мин.</time>
+        <country_age>USA / 16+</country_age>
+        <genre>драма, комедия, мелодрама</genre>
+        <date>25.02.23-10.03.23</date>
+    </movie>
+    <movie>
+        <name>Тайна Коко (2017)</name>
+        <image>../films/tayna_koko.webp</image>
+        <type>Премьера</type>
+        <time>105 мин.</time>
+        <country_age>USA, Japan / 12+</country_age>
+        <genre>мультфильм, семейный</genre>
+        <date>25.02.23-10.03.23</date>
+    </movie>
+    <movie>
+        <name>Доктор Лиза (2020)</name>
+        <image>../films/doctor_lisa.webp</image>
+        <type>Премьера</type>
+        <time>120 мин.</time>
+        <country_age>Ru / 16+</country_age>
+        <genre>драма, биография</genre>
+        <date>10.05.23-10.06.23</date>
+    </movie>   
+    <movie>
+        <name>Зеленая книга (2018)</name>
+        <image>../films/zelonaya_kniga.webp</image>
+        <type>Прокат</type>
+        <time>130 мин.</time>
+        <country_age>USA, China / 18+</country_age>
+        <genre>биография, комедия, драма</genre>
+        <date>01.05.23-01.06.23</date>
+    </movie>  
+    <movie>
+        <name>Интерстеллар (2014)</name>
+        <image>../films/interstellar.webp</image>
+        <type>Прокат</type>
+        <time>169 мин.</time>
+        <country_age>USA, UK / 16+</country_age>
+        <genre>фантастика, приключения</genre>
+        <date>01.05.23-01.06.23</date>
+    </movie> 
+    <movie>
+        <name>Бойцовский клуб (1999)</name>
+        <image>../films/boiicsovskiy_club.webp</image>
+        <type>Прокат</type>
+        <time>139 мин.</time>
+        <country_age>USA / 18+</country_age>
+        <genre>триллер, драма, криминал</genre>
+        <date>01.05.23-01.06.23</date>
+    </movie>
+    <movie>
+        <name>Назад в будущее (1985)</name>
+        <image>../films/nazad_v_buduschie.webp</image>
+        <type>Прокат</type>
+        <time>116 мин.</time>
+        <country_age>USA / 12+</country_age>
+        <genre>фантастика, комедия</genre>
+        <date>01.05.23-01.06.23</date>
+    </movie>
+    <movie>
+        <name>Король Лев (1994)</name>
+        <image>../films/korol_lev.webp</image>
+        <type>Прокат</type>
+        <time>88 мин.</time>
+        <country_age>USA / 0+</country_age>
+        <genre>мультфильм, семейный</genre>
+        <date>20.04.23-01.05.23</date>
+    </movie>
+    <movie>
+        <name>Темный рыцарь (2008)</name>
+        <image>../films/tyomnyi_rycar.webp</image>
+        <type>Прокат</type>
+        <time>152 мин.</time>
+        <country_age>USA, UK / 16+</country_age>
+        <genre>фантастика, триллер, драма</genre>
+        <date>20.04.23-01.05.23</date>
+    </movie>
+    <movie>
+        <name>1+1 (2011)</name>
+        <image>../films/1+1.webp</image>
+        <type>Прокат</type>
+        <time>112 мин.</time>
+        <country_age>France / 16+</country_age>
+        <genre>драма, комедия, биография</genre>
+        <date>20.04.23-01.05.23</date>
+    </movie>
+    <movie>
+        <name>Зверопой 2 (2021)</name>
+        <image>../films/zveropoy2.webp</image>
+        <type>Премьера</type>
+        <time>110 мин.</time>
+        <country_age>USA, Japan / 6+</country_age>
+        <genre>мультфильм, семейный</genre>
+        <date>10.05.23-10.06.23</date>
+    </movie>
+    <movie>
+        <name>Душа (2020)</name>
+        <image>../films/dysha.webp</image>
+        <type>Премьера</type>
+        <time>106 мин.</time>
+        <country_age>USA, Japan / 6+</country_age>
+        <genre>мультфильм, семейный</genre>
+        <date>10.05.23-10.06.23</date>
+    </movie>
+</container_poster>

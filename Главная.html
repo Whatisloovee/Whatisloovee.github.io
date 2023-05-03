@@ -112,24 +112,69 @@
         <div class="whatwatch">
             <h1>Что посмотреть:</h1>
             <div class="films">
-            <div class="film_sour">
+        
+        
+            </div>
+            <div id="overlay" class="hidden"></div>
+    <div id="ticket-form" class="hidden">
+        
+        <button class="close-button"><img src="SVG/cross.svg" alt=""></button>
+        <label for="name">ФИО:</label>
+        <input type="text" id="name" class="indent"> 
+        <br>
+        <label for="cinema">Кинотеатр:</label>
+        <select id="cinema" class="indent">
+        <option value="cinema1">G&D</option>
+        <option value="cinema2">Emotionflash</option>
+        </select>
+        <br>
+        <label for="row">Ряд:</label>
+        <select id="row" class="indent">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+        </select>
+        <label for="seat">Место:</label>
+        <select id="seat" class="indent">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+        </select>
+        <br>
+        <label for="date">Дата:</label>
+        <input type="date" id="date" class="indent">
 
-                <a href="">Марлоу</a>
-                <img src="image/film_marlou.png" alt="">
-            </div>
-            <div class="film_sour">
-                <a href="">Рыцарь теней</a>
-                <img src="image/film_rycsarteney.png" alt="">
-            </div>
-            <div class="film_sour">
-                <a href="">Сын</a>
-                <img src="image/film_syn.png" alt="">
-            </div>
-            <div class="film_sour">
-                <a href="">Бешенство</a>
-                <img src="image/film_beschenstvo.png" alt="">
-            </div>
-        </div>
+        <label for="time">Время:</label>
+        <select id="time" class="indent">
+          <option value="10:00">10:00</option>
+          <option value="12:00">12:00</option>
+          <option value="14:00">14:00</option>
+          <option value="16:00">16:00</option>
+          <option value="18:00">18:00</option>
+        </select>
+        <br>
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" class="indent">
+        <br>
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" class="indent">
+        <br>
+        <label for="payment">Способ оплаты:</label>
+        <input type="radio" name="payment" id="card" value="card" class="indent">
+        <label for="card">Кредитная карта</label>
+        <input type="radio" name="payment" id="cash" value="cash" class="indent">
+        <label for="cash">Наличные</label>
+        <br>
+        <button id="buy">Купить</button>
+      </div>
         </div>
 
         <footer>
@@ -173,8 +218,7 @@
 
 
     </div>
-    <script>
-    </script>
+    <script src="JS/MainPage.js"></script>
 
 </body>
 
