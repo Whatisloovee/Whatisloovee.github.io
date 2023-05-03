@@ -21,7 +21,7 @@ body {
     }
 
     @media(max-width: 880px) {
-      
+
         .nav {
             display: none;
         }
@@ -48,8 +48,6 @@ body {
                 cursor: pointer;
                 z-index: 2;
 
-
-
                 /* добавляем "гамбургер" */
                 span,
                 span::before,
@@ -70,11 +68,6 @@ body {
                     content: '';
                     top: 8px;
                 }
-
-
-
-
-
 
             }
 
@@ -138,32 +131,34 @@ body {
                 .menu__item:hover {
                     color: #f00;
                 }
-                
-                  .nav__contacts{
+
+                .nav__contacts {
                     list-style: none;
                     margin-top: 30px;
                     text-align: left;
 
-                    .nav__item
-                {
-                    margin-bottom: 10px;
-                    height: -webkit-max-content;
-                    height: -moz-max-content;
-                    height: max-content;
-                    display: flex;
-                    align-items: center;
-                    img{
-                        height: 20px;
-                        margin-right: 7px;
-                    }
-                        .nav__contact:hover{
+                    .nav__item {
+                        margin-bottom: 10px;
+                        height: -webkit-max-content;
+                        height: -moz-max-content;
+                        height: max-content;
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            height: 20px;
+                            margin-right: 7px;
+                        }
+
+                        .nav__contact:hover {
                             color: #f00;
                         }
-                        .nav__contact{
+
+                        .nav__contact {
                             height: -webkit-max-content;
                             height: -moz-max-content;
                             height: max-content;
-                            
+
                             @include header();
                             font-size: 17px;
                             text-decoration: none;
@@ -204,7 +199,7 @@ body {
             }
 
         }
-        
+
 
     }
 
@@ -302,9 +297,6 @@ body {
                 }
             }
         }
-
-
-
 
 
 
@@ -502,42 +494,37 @@ body {
                 justify-content: space-around;
                 flex-direction: row;
                 flex-wrap: wrap;
-    
+
                 .film {
                     background-color: rgba(22, 22, 22, 1);
                     padding: 0% 0% 2% 0%;
                     margin-bottom: 2%;
-    
                     width: 340px;
                     display: flex;
-    
                     flex-direction: column;
                     align-items: center;
-    
-                   
+
                     p {
                         @include header();
                         text-align: center;
                         font-size: 40px;
                         line-height: 40px;
-                        margin: 5% 5% 5% 5% ;
-            
-    
+                        margin: 5% 5% 5% 5%;
+
+
                     }
-                  
-    
+
                     .img_film {
                         width: 300px;
                         height: 450px;
-                     
                         background-image: url("../image/film_rycsarteney.png");
-                    
+
                         .on_img {
                             opacity: 0;
-                            
+
                         }
                     }
-    
+
                     .img_film:hover .on_img {
                         opacity: 1;
                         background-color: #737373;
@@ -545,21 +532,24 @@ body {
                         height: 100%;
                         display: flex;
                         flex-direction: column;
-                        .type{
+
+                        .type {
                             font-size: 37px;
                             margin-top: 15%;
                             margin-bottom: 10%;
                         }
+
                         p {
                             @include header();
                             text-align: center;
                             font-size: 35px;
                             line-height: 30px;
-                            margin: 5% 5% 3% 5% ;
-                
-        
+                            margin: 5% 5% 3% 5%;
+
+
                         }
-                        button{
+
+                        button {
                             margin: 10% 5% 5% 5%;
                             font-family: 'Inter';
                             font-style: normal;
@@ -569,11 +559,11 @@ body {
                             text-align: center;
                             color: rgba(0, 0, 0, 0.7);
                             border-radius: 30px;
-                            border-color:rgba(255, 255, 255, 0);
+                            border-color: rgba(255, 255, 255, 0);
                         }
-        
+
                     }
-    
+
                 }
             }
 
@@ -609,7 +599,7 @@ body {
                     align-items: baseline;
                     justify-content: space-around;
                     flex-direction: row;
-                    padding:0% 2% 0% 2%;
+                    padding: 0% 2% 0% 2%;
 
                     a {
                         @include header();
@@ -714,67 +704,81 @@ body {
         }
 
 
-.hidden{
-    display: none;
-}
+        .hidden {
+            display: none;
+        }
+
         #ticket-form {
-            
+
             position: fixed;
             top: 55%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 110;
-            background-color:#2E2E2E;
+            background-color: #2E2E2E;
             font-size: 20px;
             color: #FFFFFF;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            .close-button{
+
+            .close-button {
                 border-radius: 20px;
                 position: absolute;
                 right: 2%;
                 top: 2%;
-                img{
+
+                img {
                     height: 14px;
                 }
             }
-            .indent{
+
+            .indent {
                 margin-bottom: 5%;
             }
-            button{
+
+            button {
                 font-size: 20px;
             }
-            input{
+
+            input {
                 font-size: 15px;
             }
-            select{
+
+            select {
                 font-size: 15px;
             }
-            #time, #row, #seat{
+
+            #time,
+            #row,
+            #seat {
 
                 margin-right: 3%;
             }
-            #buy{
+
+            #buy {
                 position: relative;
                 left: 40%;
             }
-          }
-        
+        }
+
         //Афиша
-        .hidden2{
+        .hidden2 {
             display: none;
         }
+
         #overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный чёрный цвет */
-            z-index: 9; /* выше всех элементов на странице, кроме модального окна */
-          }
-          
+            background-color: rgba(0, 0, 0, 0.5);
+            /* полупрозрачный чёрный цвет */
+            z-index: 9;
+            /* выше всех элементов на странице, кроме модального окна */
+        }
+
 
         .withtext {
             margin-top: 15%;
@@ -840,54 +844,32 @@ body {
                             img {
                                 height: 100%;
                             }
-
-
                         }
-
                     }
-
-
-
                 }
-
-
-
-
             }
-            
-            @media (min-width:800px) and (max-width: 1320px){
 
-                .bgslider{
+            @media (min-width:800px) and (max-width: 1320px) {
+
+                .bgslider {
                     width: 700px;
-                    .slider{
+
+                    .slider {
                         width: 86%;
-
                     }
                 }
-
-
             }
-            @media (max-width:800px){
 
-                .bgslider{
+            @media (max-width:800px) {
+
+                .bgslider {
                     width: 330px;
-                    .slider{
-                        width: 87%;
 
+                    .slider {
+                        width: 87%;
                     }
                 }
-
-
             }
-
-
-
-
-
-
-
-
-
         }
 
         hr {
@@ -900,11 +882,6 @@ body {
             flex-direction: row;
             flex-wrap: wrap;
 
-
-
-
-    
-
             .film {
                 background-color: rgba(22, 22, 22, 1);
                 padding: 0% 0% 2% 0%;
@@ -916,27 +893,25 @@ body {
                 flex-direction: column;
                 align-items: center;
 
-               
+
                 p {
                     @include header();
                     text-align: center;
                     font-size: 40px;
                     line-height: 40px;
-                    margin: 5% 5% 5% 5% ;
-        
-
+                    margin: 5% 5% 5% 5%;
                 }
-              
+
 
                 .img_film {
                     width: 300px;
                     height: 450px;
-                 
+
                     background-image: url("../image/film_rycsarteney.png");
-                
+
                     .on_img {
                         opacity: 0;
-                        
+
                     }
                 }
 
@@ -947,21 +922,24 @@ body {
                     height: 100%;
                     display: flex;
                     flex-direction: column;
-                    .type{
+
+                    .type {
                         font-size: 37px;
                         margin-top: 15%;
                         margin-bottom: 10%;
                     }
+
                     p {
                         @include header();
                         text-align: center;
                         font-size: 35px;
                         line-height: 35px;
-                        margin: 3% 3% 2% 3% ;
-            
-    
+                        margin: 3% 3% 2% 3%;
+
+
                     }
-                    button{
+
+                    button {
                         margin: 10% 5% 5% 5%;
                         font-family: 'Inter';
                         font-style: normal;
@@ -971,20 +949,13 @@ body {
                         text-align: center;
                         color: rgba(0, 0, 0, 0.7);
                         border-radius: 30px;
-                        border-color:rgba(255, 255, 255, 0);
+                        border-color: rgba(255, 255, 255, 0);
                     }
-    
+
                 }
 
             }
         }
-
-
-
-
-
-
-
 
         .img_kino1 {
             width: 100%;
@@ -1049,27 +1020,9 @@ body {
             }
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
-    
+
 
     @media (max-width:500px) {
         @mixin header_mob {
@@ -1227,7 +1180,7 @@ body {
 
     }
 
-    @media (min-width:500px) and (max-width:600px){
+    @media (min-width:500px) and (max-width:600px) {
         .maindiv {
             width: 100%;
             left: 0px;
@@ -1261,7 +1214,7 @@ body {
 
 
 
-    @media (min-width:600px) and (max-width:700px){
+    @media (min-width:600px) and (max-width:700px) {
         .maindiv {
             width: 100%;
             left: 0px;
@@ -1296,7 +1249,7 @@ body {
 
 
 
-    @media (min-width:700px) and (max-width:800px){
+    @media (min-width:700px) and (max-width:800px) {
         .maindiv {
             width: 100%;
             left: 0px;
@@ -1328,7 +1281,7 @@ body {
         }
     }
 
-    @media (min-width:800px) and (max-width:880px){
+    @media (min-width:800px) and (max-width:880px) {
         .maindiv {
             width: 100%;
             left: 0px;
@@ -1359,7 +1312,8 @@ body {
             }
         }
     }
-    @media (min-width:880px) and (max-width:900px){
+
+    @media (min-width:880px) and (max-width:900px) {
         .maindiv {
 
 
@@ -1390,7 +1344,7 @@ body {
         }
     }
 
-    @media (min-width:900px) and (max-width:1150px){
+    @media (min-width:900px) and (max-width:1150px) {
         .maindiv {
             .prew {
                 margin-top: 10%;
@@ -1418,17 +1372,18 @@ body {
             }
         }
     }
-   
-    @media (min-width:1150px) and  (max-width:1200px) {
+
+    @media (min-width:1150px) and (max-width:1200px) {
 
         .maindiv {
 
             .prew {
                 margin-top: 10%;
                 width: 100%;
+
                 .slog {
                     font-size: 45px;
-                    
+
                     width: 65%;
                     margin: 0%;
                     margin-bottom: 2%;
@@ -1436,19 +1391,20 @@ body {
 
                 .def {
                     font-size: 40px;
-                    
+
                     width: 45%;
                 }
             }
 
-            
+
             .advantage {
-                .adventer{
+                .adventer {
                     padding-left: 2%;
                 }
             }
+
             .typesit {
-                .sit{
+                .sit {
                     padding-left: 2%;
                 }
             }

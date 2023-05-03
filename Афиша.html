@@ -2,187 +2,165 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="SCSS/main.css">
-    <link rel="icon" href="image/logotype.png" type="image">
-    <title>Satellite</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="SCSS/main.css">
+  <link rel="icon" href="image/logotype.png" type="image">
+  <title>Satellite</title>
 </head>
 
 <body>
-    <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-        <ul class="menu__box">
-          <li class="logandtex"><img class="logotype" src="image/logotype.png"alt=""><p>Satellite</p></li>
-          <li><a class="menu__item" href="Главная.html">Главная</a></li>
-          <li><a class="menu__item" href="Афиша.html">Афиша</a></li>
-          <li><a class="menu__item" href="Кинотеатры.html">Кинотеатры</a></li>
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+    <ul class="menu__box">
+      <li class="logandtex"><img class="logotype" src="image/logotype.png" alt="">
+        <p>Satellite</p>
+      </li>
+      <li><a class="menu__item" href="Главная.html">Главная</a></li>
+      <li><a class="menu__item" href="Афиша.html">Афиша</a></li>
+      <li><a class="menu__item" href="Кинотеатры.html">Кинотеатры</a></li>
+      <ul class="nav__contacts">
+        <li class="nav__item"> <img src="SVG/telephone.svg" alt=""><a href="https://www.skype.com/"
+            class="nav__contact">+375 (25) 73-07-287</a></li>
+        <li class="nav__item"> <img src="SVG/email.svg" alt=""><a href="https://mail.google.com/"
+            class="nav__contact">Kostyuchenko_V@it.belstu.by</a></li>
+      </ul>
+    </ul>
+  </div>
+  <div class="maindiv">
+    <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><img class="logotype" src="image/logotype.png" alt=""></li>
+          <li class="nav__item"><a href="Главная.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="Афиша.html" class="nav__link">Афиша</a></li>
+          <li class="nav__item"><a href="Кинотеатры.html" class="nav__link">Кинотеатры</a></li>
           <ul class="nav__contacts">
-            <li class="nav__item"> <img src="SVG/telephone.svg" alt=""><a href="https://www.skype.com/" class="nav__contact">+375 (25) 73-07-287</a></li>
-            <li class="nav__item"> <img src="SVG/email.svg" alt=""><a href="https://mail.google.com/" class="nav__contact">Kostyuchenko_V@it.belstu.by</a></li>
-        </ul>
-        </ul>
-      </div>
-    <div class="maindiv">
-        <header>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><img class="logotype" src="image/logotype.png"
-                            alt=""></li>
-                    <li class="nav__item"><a href="Главная.html" class="nav__link">Главная</a></li>
-                    <li class="nav__item"><a href="Афиша.html" class="nav__link">Афиша</a></li>
-                    <li class="nav__item"><a href="Кинотеатры.html" class="nav__link">Кинотеатры</a></li>
-                    <ul class="nav__contacts">
 
-                        <li class="nav__item"> <img src="SVG/telephone.svg" alt=""><a href="https://www.skype.com/" class="nav__contact">+375 (25) 73-07-287</a></li>
+            <li class="nav__item"> <img src="SVG/telephone.svg" alt=""><a href="https://www.skype.com/"
+                class="nav__contact">+375 (25) 73-07-287</a></li>
 
-                        <li class="nav__item"> <img src="SVG/email.svg" alt=""><a href="https://mail.google.com/" class="nav__contact">Kostyuchenko_V@it.belstu.by</a></li>
-                    </ul>
-                </ul>
-            </nav>
-            
-        </header>
-       
-<div class="withtext">
-    <h1>Популярное</h1>
+            <li class="nav__item"> <img src="SVG/email.svg" alt=""><a href="https://mail.google.com/"
+                class="nav__contact">Kostyuchenko_V@it.belstu.by</a></li>
+          </ul>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div class="withtext">
+      <h1>Популярное</h1>
       <div class="bgslider">
         <button class="prev">&#8249;</button>
         <div class="slider">
-            <div class="slides">
- 
-            </div>
+          <div class="slides">
+
           </div>
-          <button class="next">&#8250;</button>
         </div>
+        <button class="next">&#8250;</button>
+      </div>
     </div>
-    
+
     <hr>
     <div id="overlay" class="hidden"></div>
     <div id="ticket-form" class="hidden">
-        
-        <button class="close-button"><img src="SVG/cross.svg" alt=""></button>
-        <label for="name">ФИО:</label>
-        <input type="text" id="name" class="indent"> 
-        <br>
-        <label for="cinema">Кинотеатр:</label>
-        <select id="cinema" class="indent">
+
+      <button class="close-button"><img src="SVG/cross.svg" alt=""></button>
+      <label for="name">ФИО:</label>
+      <input type="text" id="name" class="indent">
+      <br>
+      <label for="cinema">Кинотеатр:</label>
+      <select id="cinema" class="indent">
         <option value="cinema1">G&D</option>
         <option value="cinema2">Emotionflash</option>
-        </select>
-        <br>
-        <label for="row">Ряд:</label>
-        <select id="row" class="indent">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-        </select>
-        <label for="seat">Место:</label>
-        <select id="seat" class="indent">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-        </select>
-        <br>
-        <label for="date">Дата:</label>
-        <input type="date" id="date" class="indent">
+      </select>
+      <br>
+      <label for="row">Ряд:</label>
+      <select id="row" class="indent">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+      <label for="seat">Место:</label>
+      <select id="seat" class="indent">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+      <br>
+      <label for="date">Дата:</label>
+      <input type="date" id="date" class="indent">
 
-        <label for="time">Время:</label>
-        <select id="time" class="indent">
-          <option value="10:00">10:00</option>
-          <option value="12:00">12:00</option>
-          <option value="14:00">14:00</option>
-          <option value="16:00">16:00</option>
-          <option value="18:00">18:00</option>
-        </select>
-        <br>
-        <label for="email">Электронная почта:</label>
-        <input type="email" id="email" class="indent">
-        <br>
-        <label for="phone">Телефон:</label>
-        <input type="tel" id="phone" class="indent">
-        <br>
-        <label for="payment">Способ оплаты:</label>
-        <input type="radio" name="payment" id="card" value="card" class="indent">
-        <label for="card">Кредитная карта</label>
-        <input type="radio" name="payment" id="cash" value="cash" class="indent">
-        <label for="cash">Наличные</label>
-        <br>
-        <button id="buy">Купить</button>
-      </div>
+      <label for="time">Время:</label>
+      <select id="time" class="indent">
+        <option value="10:00">10:00</option>
+        <option value="12:00">12:00</option>
+        <option value="14:00">14:00</option>
+        <option value="16:00">16:00</option>
+        <option value="18:00">18:00</option>
+      </select>
+      <br>
+      <label for="email">Электронная почта:</label>
+      <input type="email" id="email" class="indent">
+      <br>
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" class="indent">
+      <br>
+      <label for="payment">Способ оплаты:</label>
+      <input type="radio" name="payment" id="card" value="card" class="indent">
+      <label for="card">Кредитная карта</label>
+      <input type="radio" name="payment" id="cash" value="cash" class="indent">
+      <label for="cash">Наличные</label>
+      <br>
+      <button id="buy">Купить</button>
+    </div>
     <div class="films">
-        
-    </div>
-
-
-   
-  
-
-  
-
-
-
-
-
-
-
-
-
-        <footer>
-            <div class="footfirst">
-                <div class="withlogo">
-                <img class="logotype" src="image/logofooter.png" alt="">
-                <a href="">Satellite</a>
-            </div>
-            <div class="footmenu">
-                <a href="Главная.html">Главная</a>
-                <a href="Афиша.html">Афиша</a>
-                <a href="Кинотеатры.html">Кинотеатры</a>
-            </div>
-            </div>
-            <div class="footsecond">
-                <div class="socnetw">
-                    <p>Наши соцсети:</p>
-                    <div class="netw">
-                        <a href="https://www.facebook.com/"><img src="SVG/facebook.svg" alt=""></a>
-                        <a href="https://web.telegram.org/"><img src="SVG/telegram.svg" alt=""></a>
-                        <a href="https://www.instagram.com"><img src="SVG/instagram.svg" alt=""></a>
-                        <a href="https://vk.com/"><img src="SVG/vkontakte.svg" alt=""></a>
-                    </div>
-                </div>
-                <div class="pay">
-                    <img src="image/cards.png" alt=""/>
-                </div>
-            </div>
-            <div class="footthird">
-                <p>&copy; 2023, Satellite</p>
-            </div>
-        </footer>
-
-
-
-
-
-
-
-
-
 
     </div>
-     <script src="JS/Poster.js"></script>
-
-
+    <footer>
+      <div class="footfirst">
+        <div class="withlogo">
+          <img class="logotype" src="image/logofooter.png" alt="">
+          <a href="">Satellite</a>
+        </div>
+        <div class="footmenu">
+          <a href="Главная.html">Главная</a>
+          <a href="Афиша.html">Афиша</a>
+          <a href="Кинотеатры.html">Кинотеатры</a>
+        </div>
+      </div>
+      <div class="footsecond">
+        <div class="socnetw">
+          <p>Наши соцсети:</p>
+          <div class="netw">
+            <a href="https://www.facebook.com/"><img src="SVG/facebook.svg" alt=""></a>
+            <a href="https://web.telegram.org/"><img src="SVG/telegram.svg" alt=""></a>
+            <a href="https://www.instagram.com"><img src="SVG/instagram.svg" alt=""></a>
+            <a href="https://vk.com/"><img src="SVG/vkontakte.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="pay">
+          <img src="image/cards.png" alt="" />
+        </div>
+      </div>
+      <div class="footthird">
+        <p>&copy; 2023, Satellite</p>
+      </div>
+    </footer>
+  </div>
+  <script src="JS/Poster.js"></script>
 </body>
 
 </html>

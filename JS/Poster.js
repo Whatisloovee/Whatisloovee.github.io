@@ -74,12 +74,6 @@ nextButton.addEventListener('click', () => {
 
 
 
-
-
-
-
-
-
 let table2 = (arr_tag, arr) => {
   let i = 0;
   for (const elem_arr of arr_tag) {
