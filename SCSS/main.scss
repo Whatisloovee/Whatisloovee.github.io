@@ -924,7 +924,7 @@ body {
                     flex-direction: column;
 
                     .type {
-                        font-size: 37px;
+                        font-size: 35px;
                         margin-top: 15%;
                         margin-bottom: 10%;
                     }
@@ -932,8 +932,8 @@ body {
                     p {
                         @include header();
                         text-align: center;
-                        font-size: 35px;
-                        line-height: 35px;
+                        font-size: 30px;
+                        line-height: 32px;
                         margin: 3% 3% 2% 3%;
 
 
@@ -943,9 +943,9 @@ body {
                         margin: 10% 5% 5% 5%;
                         font-family: 'Inter';
                         font-style: normal;
-                        font-weight: 700;
-                        font-size: 30px;
-                        line-height: 40px;
+                        font-weight: 600;
+                        font-size: 25px;
+                        line-height: 35px;
                         text-align: center;
                         color: rgba(0, 0, 0, 0.7);
                         border-radius: 30px;
