@@ -130,7 +130,7 @@ body .hamburger-menu {
     font-style: normal;
     font-weight: 700px;
     color: #FFFFFF;
-    font-size: 17px;
+    font-size: 15px;
     text-decoration: none;
     transition-duration: 0.25s;
   }
@@ -462,7 +462,7 @@ body .maindiv .whatwatch .films .film .img_film:hover .on_img {
   flex-direction: column;
 }
 body .maindiv .whatwatch .films .film .img_film:hover .on_img .type {
-  font-size: 37px;
+  font-size: 35px;
   margin-top: 15%;
   margin-bottom: 10%;
 }
@@ -472,8 +472,8 @@ body .maindiv .whatwatch .films .film .img_film:hover .on_img p {
   font-weight: 700px;
   color: #FFFFFF;
   text-align: center;
-  font-size: 35px;
-  line-height: 30px;
+  font-size: 30px;
+  line-height: 32px;
   margin: 5% 5% 3% 5%;
 }
 body .maindiv .whatwatch .films .film .img_film:hover .on_img button {
@@ -481,8 +481,8 @@ body .maindiv .whatwatch .films .film .img_film:hover .on_img button {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 25px;
+  line-height: 35px;
   text-align: center;
   color: rgba(0, 0, 0, 0.7);
   border-radius: 30px;
