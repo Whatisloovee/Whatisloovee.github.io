@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 // Получение данных из формы
 $name = $_POST['name'];
 $сinema = $_POST['cinema'];
@@ -28,6 +30,18 @@ $root->appendChild($rowElement);
 
 $seatElement = $xml->createElement('seat', $seat);
 $root->appendChild($seatElement);
+
+$dateElement = $xml->createElement('date', $date);
+$root->appendChild($dateElement);
+
+$timeElement = $xml->createElement('time', $time);
+$root->appendChild($timeElement);
+
+$emailElement = $xml->createElement('email', $email);
+$root->appendChild($emailElement);
+
+$phoneElement = $xml->createElement('phone', $phone);
+$root->appendChild($phoneElement);
 
 
 
