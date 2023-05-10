@@ -116,10 +116,10 @@ let table = (arr_tag, arr) => {
   
   )
   
-  async function parseXML() {//async ключевое слово которое обозначает что наша функция становиться асинхронной
-    let a = await fetch('../parsexml1.xml') // await ключевое слово которое грубо говорят останавливает наш весь следующий код, пока запрос не выполнится
-    let xmlString = await a.text();//та же песня как только мы приобразуем наши данные в текст мы можем их использовать
-    parse(xmlString);//вызываем функции которая все парсит, ее реализация сверху
+  async function parseXML() {
+    let a = await fetch('../parsexml1.xml') 
+    let xmlString = await a.text();
+    parse(xmlString);
   }
   
   parseXML();

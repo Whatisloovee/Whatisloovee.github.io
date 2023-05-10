@@ -13,9 +13,7 @@ body .hamburger-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* скрываем чекбокс */
-    /* стилизуем кнопку */
-    /* контейнер меню */
+
   }
   body .hamburger-menu #menu__toggle {
     opacity: 0;
@@ -24,11 +22,9 @@ body .hamburger-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* используем flex для центрирования содержимого */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    /* центрируем содержимое кнопки */
     position: fixed;
     top: 20px;
     left: 20px;

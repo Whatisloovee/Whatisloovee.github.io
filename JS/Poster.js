@@ -2,75 +2,84 @@
 const slides = document.querySelector('.slides');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
-let screen = document.documentElement.clientWidth;
-let slideWidth;
+let screen;
 
-if(screen >= 1320)
-{
-  slideWidth = slides.clientWidth / 3.1;
-  let currentPosition = 0;
+function handleResize() {
+  screen = document.documentElement.clientWidth;
 
-prevButton.addEventListener('click', () => {
-  currentPosition += slideWidth;
-  if (currentPosition > 0) {
-    currentPosition = -(slideWidth * 7);
+  let slideWidth;
+
+  if(screen >= 1320)
+  {
+    slideWidth = slides.clientWidth / 3.1;
+    let currentPosition = 0;
+
+    prevButton.addEventListener('click', () => {
+      currentPosition += slideWidth;
+      if (currentPosition > 0) {
+        currentPosition = -(slideWidth * 7);
+      }
+      slides.style.transform = `translateX(${currentPosition}px)`;
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentPosition -= slideWidth;
+      if (currentPosition < -(slideWidth * 7)) {
+        currentPosition = 0;
+      }
+      slides.style.transform = `translateX(${currentPosition}px)`;
+    });
+
   }
-  slides.style.transform = `translateX(${currentPosition}px)`;
-});
+  else if(screen >= 800 && screen < 1320)
+  {
+    slideWidth = slides.clientWidth / 2;
+    let currentPosition = 0;
 
-nextButton.addEventListener('click', () => {
-  currentPosition -= slideWidth;
-  if (currentPosition < -(slideWidth * 7)) {
-    currentPosition = 0;
+    prevButton.addEventListener('click', () => {
+      currentPosition += slideWidth;
+      if (currentPosition > 0) {
+        currentPosition = -(slideWidth * 8);
+      }
+      slides.style.transform = `translateX(${currentPosition}px)`;
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentPosition -= slideWidth;
+      if (currentPosition < -(slideWidth * 8)) {
+        currentPosition = 0;
+      }
+      slides.style.transform = `translateX(${currentPosition}px)`;
+    });
+
   }
-  slides.style.transform = `translateX(${currentPosition}px)`;
-});
+  else
+  {
+    slideWidth = slides.clientWidth ;
+    let currentPosition = 0;
 
+    prevButton.addEventListener('click', () => {
+      currentPosition += slideWidth;
+      if (currentPosition > 0) {
+        currentPosition = -(slideWidth * 9);
+      }
+      slides.style.transform = `translateX(${currentPosition}px)`;
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentPosition -= slideWidth;
+      if (currentPosition < -(slideWidth * 9)) {
+        currentPosition = 0;
+      }
+      slides.style.transform = `translateX(${currentPosition}px)`;
+    });
+  }
 }
-else if(screen >= 800 && screen < 1320)
-{
-  slideWidth = slides.clientWidth / 2;
-  let currentPosition = 0;
 
-prevButton.addEventListener('click', () => {
-  currentPosition += slideWidth;
-  if (currentPosition > 0) {
-    currentPosition = -(slideWidth * 8);
-  }
-  slides.style.transform = `translateX(${currentPosition}px)`;
-});
+handleResize(); 
 
-nextButton.addEventListener('click', () => {
-  currentPosition -= slideWidth;
-  if (currentPosition < -(slideWidth * 8)) {
-    currentPosition = 0;
-  }
-  slides.style.transform = `translateX(${currentPosition}px)`;
-});
+window.addEventListener('resize', handleResize); 
 
-}
-else
-{
-  slideWidth = slides.clientWidth ;
-  let currentPosition = 0;
-
-prevButton.addEventListener('click', () => {
-  currentPosition += slideWidth;
-  if (currentPosition > 0) {
-    currentPosition = -(slideWidth * 9);
-  }
-  slides.style.transform = `translateX(${currentPosition}px)`;
-});
-
-nextButton.addEventListener('click', () => {
-  currentPosition -= slideWidth;
-  if (currentPosition < -(slideWidth * 9)) {
-    currentPosition = 0;
-  }
-  slides.style.transform = `translateX(${currentPosition}px)`;
-});
-
-}
 
 
 
@@ -92,46 +101,24 @@ let parse2 = (xmlString => {
   names_arr = table2(names, names_arr);
   images_arr = table2(images, images_arr);
 
-
   for (let i = 0; i < names_arr.length; i++) {
-
     document.querySelector('.slides').insertAdjacentHTML("beforeend",
-
       `<div class="imgout">
       <p>${names_arr[i]}</p>
       <img src="${images_arr[i]}"/>
         </div>`
     );
-
   }
-    
 }
-
 )
 
-async function parseXML2() {//async ключевое слово которое обозначает что наша функция становиться асинхронной
-  let a = await fetch('../parsexml3.xml') // await ключевое слово которое грубо говорят останавливает наш весь следующий код, пока запрос не выполнится
-  let xmlString = await a.text();//та же песня как только мы приобразуем наши данные в текст мы можем их использовать
-  parse2(xmlString);//вызываем функции которая все парсит, ее реализация сверху
+async function parseXML2() {
+  let a = await fetch('../parsexml3.xml') 
+  let xmlString = await a.text();
+  parse2(xmlString);
 }
 
 parseXML2();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function byfilmas(){
@@ -170,12 +157,11 @@ buyButton.addEventListener('click', () => {
   document.getElementById('email').value = '';
   document.getElementById('card').checked = false;
   document.getElementById('cash').checked = false;
-  ticketForm.classList.add('hidden'); // скрываем окно с формой
+  ticketForm.classList.add('hidden'); 
   overlay.classList.add('hidden');
-  // здесь можно добавить логику для обработки покупки билета
 });
 
-// добавляем обработчик события для кнопки закрытия
+
 closeButton.addEventListener('click', () => {
   ticketForm.classList.add('hidden');
   overlay.classList.add('hidden');
@@ -185,7 +171,7 @@ overlay.addEventListener('click', () => {
   overlay.classList.add('hidden');
 });
 
-// добавляем обработчик события для скрытия формы при клике за ее пределами
+
 document.addEventListener('click', (event) => {
   if (!event.target.closest('#ticket-form') && !event.target.classList.contains('buyticket')) {
     ticketForm.classList.add('hidden');

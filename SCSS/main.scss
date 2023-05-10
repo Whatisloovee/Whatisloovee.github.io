@@ -20,191 +20,167 @@ body {
         display: none;
     }
 
-    @media(max-width: 880px) {
+@media(max-width: 880px) {
 
-        .nav {
-            display: none;
+    .nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+
+        #menu__toggle {
+            opacity: 0;
         }
 
-        .hamburger-menu {
+        .menu__btn {
             display: flex;
+            align-items: center;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 26px;
+            height: 26px;
+            cursor: pointer;
+            z-index: 2;
 
-            /* скрываем чекбокс */
-            #menu__toggle {
-                opacity: 0;
-            }
-
-            /* стилизуем кнопку */
-            .menu__btn {
-                display: flex;
-                /* используем flex для центрирования содержимого */
-                align-items: center;
-                /* центрируем содержимое кнопки */
-                position: fixed;
-                top: 20px;
-                left: 20px;
-                width: 26px;
-                height: 26px;
-                cursor: pointer;
-                z-index: 2;
-
-                /* добавляем "гамбургер" */
-                span,
-                span::before,
-                span::after {
-                    display: block;
-                    position: absolute;
-                    width: 100%;
-                    height: 2px;
-                    background-color: #c2c2c2;
-                }
-
-                span::before {
-                    content: '';
-                    top: -8px;
-                }
-
-                span::after {
-                    content: '';
-                    top: 8px;
-                }
-
-            }
-
-
-            /* контейнер меню */
-            .menu__box {
-                transition: all 1s ease;
+            span,
+            span::before,
+            span::after {
                 display: block;
-                position: fixed;
-                visibility: hidden;
-                top: 0;
-                left: -100%;
-                width: 300px;
-                height: 100%;
-                margin: 0;
-                padding: 7px 0;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: #c2c2c2;
+            }
+
+            span::before {
+                content: '';
+                top: -8px;
+            }
+
+            span::after {
+                content: '';
+                top: 8px;
+            }
+        }
+
+        .menu__box {
+            transition: all 1s ease;
+            display: block;
+            position: fixed;
+            visibility: hidden;
+            top: 0;
+            left: -100%;
+            width: 300px;
+            height: 100%;
+            margin: 0;
+            padding: 7px 0;
+            list-style: none;
+            text-align: center;
+            background-color: #2E2E2E;
+            z-index: 1;
+
+            .logandtex {
+                position: relative;
+                width: 50%;
+                height: -webkit-max-content;
+                height: -moz-max-content;
+                height: max-content;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                padding-left: 40%;
+                margin-bottom: 20%;
+
+                img {
+                    width: 30%;
+                }
+
+                p {
+                    @include header();
+                    font-size: 20px;
+                    margin: 0%;
+                    padding-top: 8%;
+                }
+            }
+
+            .menu__item {
+                display: block;
+                padding: 5%;
+                @include header();
+                font-size: 30px;
+                text-decoration: none;
+                transition-duration: .25s;
+            }
+
+            .menu__item:hover {
+                color: #f00;
+            }
+
+            .nav__contacts {
                 list-style: none;
-                text-align: center;
-                background-color: #2E2E2E;
-                z-index: 1;
+                margin-top: 30px;
+                text-align: left;
 
-
-                .logandtex {
-                    position: relative;
-                    width: 50%;
+                .nav__item {
+                    margin-bottom: 10px;
                     height: -webkit-max-content;
                     height: -moz-max-content;
                     height: max-content;
                     display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
                     align-items: center;
-                    padding-left: 40%;
-                    margin-bottom: 20%;
 
                     img {
-                        width: 30%;
+                        height: 20px;
+                        margin-right: 7px;
                     }
 
-                    p {
-                        @include header();
-                        font-size: 20px;
-                        margin: 0%;
-                        padding-top: 8%;
+                    .nav__contact:hover {
+                        color: #f00;
                     }
-                }
 
-
-
-
-                /* элементы меню */
-                .menu__item {
-                    display: block;
-                    padding: 5%;
-                    @include header();
-                    font-size: 30px;
-                    text-decoration: none;
-                    transition-duration: .25s;
-                }
-
-                .menu__item:hover {
-                    color: #f00;
-                }
-
-                .nav__contacts {
-                    list-style: none;
-                    margin-top: 30px;
-                    text-align: left;
-
-                    .nav__item {
-                        margin-bottom: 10px;
+                    .nav__contact {
                         height: -webkit-max-content;
                         height: -moz-max-content;
                         height: max-content;
-                        display: flex;
-                        align-items: center;
 
-                        img {
-                            height: 20px;
-                            margin-right: 7px;
-                        }
-
-                        .nav__contact:hover {
-                            color: #f00;
-                        }
-
-                        .nav__contact {
-                            height: -webkit-max-content;
-                            height: -moz-max-content;
-                            height: max-content;
-
-                            @include header();
-                            font-size: 15px;
-                            text-decoration: none;
-                            transition-duration: .25s;
-
-                        }
+                        @include header();
+                        font-size: 15px;
+                        text-decoration: none;
+                        transition-duration: .25s;
                     }
                 }
-
-
-
             }
-
-
-            #menu__toggle:checked~.menu__btn>span {
-                transform: rotate(45deg);
-            }
-
-            #menu__toggle:checked~.menu__btn>span::before {
-                top: 0;
-                transform: rotate(0);
-            }
-
-            #menu__toggle:checked~.menu__btn>span::after {
-                top: 0;
-                transform: rotate(90deg);
-            }
-
-            #menu__toggle:checked~.menu__box {
-                visibility: visible;
-                left: 0;
-            }
-
-            .menu__btn>span,
-            .menu__btn>span::before,
-            .menu__btn>span::after {
-                transition-duration: .25s;
-            }
-
         }
 
+        #menu__toggle:checked~.menu__btn>span {
+            transform: rotate(45deg);
+        }
 
+        #menu__toggle:checked~.menu__btn>span::before {
+            top: 0;
+            transform: rotate(0);
+        }
+
+        #menu__toggle:checked~.menu__btn>span::after {
+            top: 0;
+            transform: rotate(90deg);
+        }
+
+        #menu__toggle:checked~.menu__box {
+            visibility: visible;
+            left: 0;
+        }
+
+        .menu__btn>span,
+        .menu__btn>span::before,
+        .menu__btn>span::after {
+            transition-duration: .25s;
+        }
     }
-
-
-
+}
 
     .maindiv {
         position: relative;
@@ -215,7 +191,6 @@ body {
         top: 0px;
 
         .nav {
-
             position: fixed;
             right: 57px;
             left: 57px;
@@ -563,8 +538,8 @@ body {
                         }
 
                     }
-                    @media (max-width: 560px)
-                    {
+
+                    @media (max-width: 560px) {
                         .img_film:hover .on_img {
                             opacity: 1;
                             background-color: #737373;
@@ -572,23 +547,23 @@ body {
                             height: 100%;
                             display: flex;
                             flex-direction: column;
-    
+
                             .type {
                                 font-size: 30px;
                                 margin-top: 15%;
                                 margin-bottom: 10%;
                             }
-    
+
                             p {
                                 @include header();
                                 text-align: center;
                                 font-size: 25px;
                                 line-height: 27px;
                                 margin: 3% 5% 3% 5%;
-    
-    
+
+
                             }
-    
+
                             button {
                                 margin: 4% 5% 5% 5%;
                                 font-family: 'Inter';
@@ -601,7 +576,7 @@ body {
                                 border-radius: 30px;
                                 border-color: rgba(255, 255, 255, 0);
                             }
-    
+
                         }
                     }
 
