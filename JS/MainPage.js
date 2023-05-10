@@ -34,12 +34,12 @@ buyButton.addEventListener('click', () => {
   document.getElementById('email').value = '';
   document.getElementById('card').checked = false;
   document.getElementById('cash').checked = false;
-  ticketForm.classList.add('hidden'); // скрываем окно с формой
+  ticketForm.classList.add('hidden'); 
   overlay.classList.add('hidden');
-  // здесь можно добавить логику для обработки покупки билета
+
 });
 
-// добавляем обработчик события для кнопки закрытия
+
 closeButton.addEventListener('click', () => {
   ticketForm.classList.add('hidden');
   overlay.classList.add('hidden');
@@ -49,7 +49,6 @@ overlay.addEventListener('click', () => {
   overlay.classList.add('hidden');
 });
 
-// добавляем обработчик события для скрытия формы при клике за ее пределами
 document.addEventListener('click', (event) => {
   if (!event.target.closest('#ticket-form') && !event.target.classList.contains('buyticket')) {
     ticketForm.classList.add('hidden');

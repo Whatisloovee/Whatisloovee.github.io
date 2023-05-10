@@ -81,8 +81,6 @@ handleResize();
 window.addEventListener('resize', handleResize); 
 
 
-
-
 let table2 = (arr_tag, arr) => {
   let i = 0;
   for (const elem_arr of arr_tag) {
@@ -237,10 +235,10 @@ let parse = (xmlString => {
 
 )
 
-async function parseXML() {//async ключевое слово которое обозначает что наша функция становиться асинхронной
-  let a = await fetch('../parsexml2.xml') // await ключевое слово которое грубо говорят останавливает наш весь следующий код, пока запрос не выполнится
-  let xmlString = await a.text();//та же песня как только мы приобразуем наши данные в текст мы можем их использовать
-  parse(xmlString);//вызываем функции которая все парсит, ее реализация сверху
+async function parseXML() {
+  let a = await fetch('../parsexml2.xml') 
+  let xmlString = await a.text();
+  parse(xmlString);
 }
 
 parseXML();
