@@ -1,0 +1,11 @@
+<tickets><ticket>
+  <name>Vladislav Kostyithenko</name>
+  <cinema>cinema1</cinema>
+  <row>1</row>
+  <seat>1</seat>
+  <date>2023-05-03</date>
+  <time>10:00</time>
+  <email>Kostyuchenko_V@it.belstu.by</email>
+  <phone>+375257307287</phone>
+  <payment>card</payment>
+  </ticket></tickets>
