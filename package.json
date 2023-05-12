@@ -1,0 +1,23 @@
+{
+  "name": "vladik_viber",
+  "version": "1.0.0",
+  "description": "kourse_project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Whatisloovee/Whatisloovee.github.io.git"
+  },
+  "author": "Vladik Kostyithenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Whatisloovee/Whatisloovee.github.io/issues"
+  },
+  "homepage": "https://github.com/Whatisloovee/Whatisloovee.github.io#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  }
+}

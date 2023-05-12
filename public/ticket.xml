@@ -1,0 +1,26 @@
+<tickets>
+    <ticket>
+        <fio>Vladislav Kostyithenko</fio>
+        <cinema>cinema1</cinema>
+        <row>1</row>
+        <seat>1</seat>
+        <date>2023-05-01</date>
+        <time>18:00</time>
+        <email>Kostyuchenko_V@it.belstu.by</email>
+        <phone>+375257307287</phone>
+        <payment_cash>undefined</payment_cash>
+        <payment_card>card</payment_card>
+    </ticket>
+    <ticket>
+        <fio>Vladik Viber</fio>
+        <cinema>cinema2</cinema>
+        <row>4</row>
+        <seat>5</seat>
+        <date>2023-05-02</date>
+        <time>12:00</time>
+        <email>vladkostyithenko@gmail.com</email>
+        <phone>+375257307287</phone>
+        <payment_cash>cash</payment_cash>
+        <payment_card>undefined</payment_card>
+    </ticket>
+</tickets>
