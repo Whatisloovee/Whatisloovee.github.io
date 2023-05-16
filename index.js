@@ -52,7 +52,7 @@ app.post('/posters', (req, res) => {
     </ticket>
 </tickets>`
     fs.writeFileSync(__dirname + "/public/ticket.xml", dataUser, (error) => {
-        if (error) throw error; // если возникла ошибка
+        if (error) throw error; 
         
     });
         return res.redirect("/posters");
