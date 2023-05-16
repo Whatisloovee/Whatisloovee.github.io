@@ -23,4 +23,16 @@
         <payment_cash>cash</payment_cash>
         <payment_card>undefined</payment_card>
     </ticket>
+    <ticket>
+        <fio>Vladislav Kostyithenko</fio>
+        <cinema>cinema2</cinema>
+        <row>4</row>
+        <seat>4</seat>
+        <date>2023-05-24</date>
+        <time>14:00</time>
+        <email>Kostyuchenko_V@it.belstu.by</email>
+        <phone>+375257307287</phone>
+        <payment_cash>undefined</payment_cash>
+        <payment_card>card</payment_card>
+    </ticket>
 </tickets>
